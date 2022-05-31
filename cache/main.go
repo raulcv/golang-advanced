@@ -7,6 +7,7 @@ import (
 	"time"
 )
 
+// Cache system with concurrent access
 func Fibonacci(key int) int {
 	if key <= 1 {
 		return key
@@ -14,7 +15,7 @@ func Fibonacci(key int) int {
 	return Fibonacci(key-1) + Fibonacci(key-2)
 }
 
-// Memory holds a function and a map of results
+// Memory holds a function and a maps of results
 type Memory struct {
 	Funct Function               //Function to be used
 	Cache map[int]FunctionResult //Map of results for a given key
