@@ -7,7 +7,7 @@ import (
 
 /*
 Problem withdraw and deposit
-go run --race build main.go -> to create file with information about concurrent status ok or not (Runner condition)
+go run --race build main.go -> to create file with information about concurrent status ok or not (Race condition)
 */
 var (
 	balance int = 100
