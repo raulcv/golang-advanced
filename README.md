@@ -5,4 +5,5 @@
 * caching
   : cache with concurrency
   : Cache mapping workers memory
+  : Emulating Redis
 
